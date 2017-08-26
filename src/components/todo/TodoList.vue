@@ -24,3 +24,14 @@
     }
   }
 </script>
+
+<style>
+  .btn {
+    clear: both;
+    float: right;
+  }
+  .input-text {
+    width: 200px;
+    margin-left: 20px;
+  }
+</style>

@@ -2,7 +2,10 @@
  * Created by sam on 2017. 8. 26..
 -->
 <template>
-  <li>{{name}}</li>
+  <li>
+    {{name}}
+    <button class="btn"></button>
+  </li>
 </template>
     
 <script lang="ts">
@@ -11,3 +14,9 @@
     props: ['name']
   }
 </script>
+
+<style>
+  .completed {
+    text-decoration: line-through;
+  }
+</style>
