@@ -3,12 +3,24 @@
 -->
 <template>
   <ul>
-    <li>예시값</li>
+    <todo-item
+      v-for="(item, i) in items"
+      :key="i"
+      :name="item"
+    ></todo-item>
   </ul>
 </template>
     
-<script>
+<script lang="ts">
+  import TodoItem from "./TodoItem.vue";
+
   export default {
-    name: 'TodoList'
+    name: 'TodoList',
+    components: {TodoItem},
+    data() {
+      return {
+        items: ['A', 'B', 'C']
+      }
+    }
   }
 </script>
