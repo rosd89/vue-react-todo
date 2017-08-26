@@ -1,14 +1,15 @@
 <!-- src/components/App.vue -->
 <template>
-    <div>hello {{str}}</div>
+    <todo-content>
+        <todo-list></todo-list>
+    </todo-content>
 </template>
 
 <script lang="ts">
+    import TodoContent from "./todo/TodoContent.vue";
+    import TodoList from "./todo/TodoList.vue";
+
     export default {
-        data() {
-            return {
-                str: "World"
-            }
-        }
+      components: {TodoList, TodoContent},
     };
 </script>
