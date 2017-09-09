@@ -8,6 +8,6 @@
 </template>
 
 <script lang="ts">
-  import HiComponent from './HiComponent.ts';
+  import HiComponent from './HiComponent.ts'
   export default HiComponent
 </script>

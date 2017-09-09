@@ -20,7 +20,7 @@ export default class HelloComponent extends Vue {
     this.enthusiasm++
   }
 
-  descrement(): void {
+  decrement(): void {
     if (this.enthusiasm > 1) {
       this.enthusiasm--
     }
